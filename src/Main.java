@@ -9,11 +9,13 @@ public class Main {
         SuperHomem clark = new SuperHomem();
         clark.setExperiencia(25);
 
-        TorreDeControle.adicionarVoador(marreco);
-        TorreDeControle.adicionarVoador(boeing);
-        TorreDeControle.adicionarVoador(clark);
+        TorreDeControle torre = new TorreDeControle();
 
-        TorreDeControle.voemTodos();
+        torre.adicionarVoador(marreco);
+        torre.adicionarVoador(boeing);
+        torre.adicionarVoador(clark);
+
+        torre.voemTodos();
 
     }
 }
